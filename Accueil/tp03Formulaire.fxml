@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="655.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.ControleurListeMembres">
+   <children>
+      <Label alignment="CENTER" style="-fx-padding: 10;" text="Identité">
+         <opaqueInsets>
+            <Insets bottom="50.0" left="50.0" right="50.0" />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-padding: 10; -fx-border-color: grey;">
+         <opaqueInsets>
+            <Insets bottom="50.0" left="50.0" right="50.0" />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="TOP_LEFT" prefWidth="100.0" text="Nom* :">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtNom" onKeyTyped="#nomKeyTyped" prefHeight="29.0" prefWidth="166.0" />
+                  <Label alignment="TOP_LEFT" text="Prénom* :">
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField prefHeight="29.0" prefWidth="177.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="TOP_LEFT" prefWidth="100.0" text="Adresse* :">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField prefHeight="29.0" prefWidth="451.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="TOP_LEFT" prefWidth="100.0">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField prefHeight="29.0" prefWidth="451.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="TOP_LEFT" prefHeight="19.0" prefWidth="100.0" text="Code postal* : ">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtCodePostal" prefHeight="29.0" prefWidth="80.0" />
+                  <Label alignment="TOP_LEFT" text="Ville* : ">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField prefHeight="29.0" prefWidth="179.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="TOP_LEFT" prefWidth="100.0" text="Téléphone : ">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField prefHeight="29.0" prefWidth="148.0" promptText="Ex : +33 7 83 42 54 20" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="TOP_LEFT" prefWidth="100.0" text="Email* : ">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField prefHeight="29.0" prefWidth="420.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" style="-fx-padding: 10;" text="Abonnement">
+         <opaqueInsets>
+            <Insets bottom="50.0" left="50.0" right="50.0" />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <VBox prefWidth="100.0" style="-fx-padding: 10; -fx-border-color: grey;">
+         <opaqueInsets>
+            <Insets bottom="50.0" left="50.0" right="50.0" />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </VBox.margin>
+         <children>
+            <RadioButton fx:id="radioBtn" mnemonicParsing="false" text="Je m'abonne à l'offre DUO 1 ans pour un montant de  81,40 euros">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <toggleGroup>
+                  <ToggleGroup fx:id="btnRadioAbo" />
+               </toggleGroup>
+            </RadioButton>
+            <Label text="(journal papier + version numérique)">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="radioBtn" mnemonicParsing="false" text="Je m'abonne à l'offre NUMERIQUE 1 ans pour un montant de  76,40 euros (version numérique)" toggleGroup="$btnRadioAbo">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </RadioButton>
+            <Label text="(version numérique)">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" style="-fx-padding: 10;" text="Règlement">
+         <opaqueInsets>
+            <Insets bottom="50.0" left="50.0" right="50.0" />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <VBox prefWidth="100.0" style="-fx-padding: 10; -fx-border-color: grey;">
+         <opaqueInsets>
+            <Insets bottom="50.0" left="50.0" right="50.0" />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </VBox.margin>
+         <children>
+            <RadioButton mnemonicParsing="false" text="Je règle par prélèvement">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <toggleGroup>
+                  <ToggleGroup fx:id="btnRadioReg" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" selected="true" text="Je règle par chèque" toggleGroup="$btnRadioReg">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </RadioButton>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" style="-fx-padding: 10;" text="Acceptation">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="50.0" left="50.0" right="50.0" />
+         </opaqueInsets>
+      </Label>
+      <VBox prefWidth="100.0" style="-fx-padding: 10; -fx-border-color: grey;">
+         <opaqueInsets>
+            <Insets bottom="50.0" left="50.0" right="50.0" />
+         </opaqueInsets>
+         <children>
+            <CheckBox mnemonicParsing="false" style="-fx-padding: 10;" text="Accepte de recevoir des informations">
+               <opaqueInsets>
+                  <Insets bottom="50.0" left="50.0" right="50.0" />
+               </opaqueInsets>
+            </CheckBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox alignment="TOP_RIGHT" prefHeight="60.0" prefWidth="655.0" spacing="10.0">
+         <children>
+            <Button fx:id="annulation" cancelButton="true" mnemonicParsing="false" onAction="#annuler" text="Annuler">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="bnOk" defaultButton="true" mnemonicParsing="false" onAction="#verifAlerte" text="Valider">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>

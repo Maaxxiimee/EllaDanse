@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.ControleurAccueil">
+   <children>
+      <Button fx:id="bnListeMembres" layoutX="477.0" layoutY="183.0" mnemonicParsing="false" onAction="#afficherListeMembres" prefHeight="73.0" prefWidth="96.0" style="-fx-font-family: Serif;" text="Membres" />
+      <Button fx:id="bnCreationMembre" layoutX="34.0" layoutY="146.0" mnemonicParsing="false" onAction="#CreerMembre" prefHeight="110.0" prefWidth="212.0" style="-fx-font-family: Serif;" text="Créer un membre" />
+      <Button fx:id="bnFermer" layoutX="510.0" layoutY="342.0" mnemonicParsing="false" onAction="#clicFermer" style="-fx-font-family: Serif;" text="Quitter" />
+      <Label layoutX="218.0" layoutY="14.0" style="-fx-font-family: ;" text="Accueil">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="bnRetour" layoutX="34.0" layoutY="342.0" mnemonicParsing="false" onAction="#clicRetour" style="-fx-font-family: Serif;" text="Retour" />
+      <Button fx:id="bnListeBureau" layoutX="349.0" layoutY="183.0" mnemonicParsing="false" onAction="#afficherListeBureau" prefHeight="73.0" prefWidth="96.0" style="-fx-font-family: Serif;" text="Bureau" />
+      <Label layoutX="356.0" layoutY="146.0" text="Liste des membres / du bureau">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
